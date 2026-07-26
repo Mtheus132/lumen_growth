@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ads &amp; PPC Management | Lumen Growth</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="script.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(26, 26, 26, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            border-color: rgba(42, 229, 0, 0.4);
+            box-shadow: 0 0 20px rgba(42, 229, 0, 0.1);
+        }
+        .neon-glow {
+            box-shadow: 0 0 15px rgba(42, 229, 0, 0.3);
+        }
+        .glow-line {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(42, 229, 0, 0.5), transparent);
+        }
+        body {
+            background-color: #0B0B0B;
+            color: #e1e3e4;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#fdf9f9",
+                    "surface-dim": "#111415",
+                    "on-primary-fixed": "#022100",
+                    "surface-container-high": "#282a2b",
+                    "inverse-primary": "#106e00",
+                    "on-primary-fixed-variant": "#095300",
+                    "primary-fixed-dim": "#2ae500",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "surface-variant": "#323536",
+                    "on-error-container": "#ffdad6",
+                    "secondary-fixed": "#e5e2e1",
+                    "primary-fixed": "#79ff5b",
+                    "on-error": "#690005",
+                    "surface-container-highest": "#323536",
+                    "primary": "#efffe3",
+                    "inverse-surface": "#e1e3e4",
+                    "surface": "#111415",
+                    "tertiary-fixed": "#e5e2e1",
+                    "error": "#ffb4ab",
+                    "secondary": "#c9c6c5",
+                    "on-primary": "#053900",
+                    "on-secondary": "#313030",
+                    "error-container": "#93000a",
+                    "background": "#111415",
+                    "surface-tint": "#2ae500",
+                    "on-primary-container": "#107100",
+                    "surface-container": "#1d2021",
+                    "on-tertiary": "#313030",
+                    "tertiary-fixed-dim": "#c8c6c5",
+                    "on-surface": "#e1e3e4",
+                    "on-secondary-container": "#bab8b7",
+                    "surface-bright": "#373a3b",
+                    "primary-container": "#39ff14",
+                    "on-tertiary-fixed": "#1c1b1b",
+                    "tertiary-container": "#e0dddc",
+                    "inverse-on-surface": "#2e3132",
+                    "on-secondary-fixed-variant": "#474646",
+                    "on-tertiary-fixed-variant": "#474746",
+                    "outline-variant": "#3c4b35",
+                    "on-background": "#e1e3e4",
+                    "on-surface-variant": "#baccb0",
+                    "surface-container-low": "#191c1d",
+                    "outline": "#85967c",
+                    "surface-container-lowest": "#0c0f10",
+                    "on-tertiary-container": "#626161",
+                    "secondary-container": "#4a4949"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "margin-mobile": "24px",
+                    "container-max": "1280px",
+                    "gutter": "24px",
+                    "unit": "8px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Montserrat"],
+                    "display-lg-mobile": ["Montserrat"],
+                    "label-md": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-md": ["Montserrat"],
+                    "display-lg": ["Montserrat"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "800"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-md border-b border-outline-variant/20 shadow-[0_0_15px_rgba(42,229,0,0.1)]">
+<div class="flex justify-between items-center h-20 px-margin-desktop max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md font-bold tracking-tighter text-primary dark:text-primary-fixed" href="#">Lumen Growth</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">SEO</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">Digital Marketing</a>
+<a class="font-label-md text-label-md text-primary dark:text-primary-fixed border-b-2 border-primary transition-colors duration-300" href="#">Ads</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">Resultados</a>
+</div>
+<button class="bg-primary-container text-on-primary-container font-label-md px-6 py-2 rounded-full hover:opacity-80 active:scale-95 transition-all">Fale Conosco</button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[819px] flex items-center justify-center overflow-hidden px-margin-mobile md:px-margin-desktop">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-background to-background"></div>
+<img class="w-full h-full object-cover opacity-30" data-alt="A cinematic, high-contrast image of a futuristic digital command center. Deep charcoal surfaces are illuminated by vibrant neon green data streams and complex analytical graphs on holographic displays. The atmosphere is sophisticated and technological, reflecting a dark-mode-first aesthetic with sharp focus and professional lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4q-oY_NdudXh5U6PkAD4lcAbJAgGX5VFHrHASrTYXm55zz-FkxXXCeTGos9SUYvtUUAWM1ikj19BD4gWWdk4y0e1MJxpLV8WivW07_GdNIykYw0g1ntfTL9IdndgNk_-1JBllqS2hl79mVsrZUbg1qzlAXgkbig7V0aDdwcMKhI5p-TjqohJPl0nYVA-tDwaJzqmeb5hjeldOElJAGjWRu-05uL7M71YDRAZLl8jIV11vuzwTBDcnkdCu6cWY7rTW2rVaYVtWOro"/>
+</div>
+<div class="relative z-10 text-center max-w-4xl mx-auto">
+<div class="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-primary/10 border border-primary/20 text-primary-fixed-dim font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+                    PERFORMANCE DRIVEN
+                </div>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary via-white to-primary-fixed">
+                    ROI-Focused Advertising.
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10">
+                    Precision-engineered campaigns across Google, Meta, and LinkedIn. We don't just buy traffic; we manufacture growth through data-backed strategies and creative excellence.
+                </p>
+<div class="flex flex-col md:flex-row items-center justify-center gap-4">
+<button class="w-full md:w-auto bg-primary-container text-on-primary-container font-label-md px-8 py-4 rounded-full neon-glow hover:opacity-90 active:scale-95 transition-all">Start Your Growth Journey</button>
+<button class="w-full md:w-auto border border-primary text-primary font-label-md px-8 py-4 rounded-full hover:bg-primary/5 transition-all">View Case Studies</button>
+</div>
+</div>
+</section>
+<!-- Glow Divider -->
+<div class="glow-line max-w-container-max mx-auto"></div>
+<!-- Platforms Section (Bento Grid) -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-center mb-16">Strategic Platform Mastery</h2>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Google Ads -->
+<div class="md:col-span-8 glass-card p-8 rounded-xl flex flex-col md:flex-row gap-8 items-center">
+<div class="flex-1">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary text-4xl">search</span>
+<h3 class="font-headline-md text-headline-md">Google Ads</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                            Dominate intent-based search. We optimize for high-conversion keywords, leveraging AI-driven bidding and dynamic search ads to capture customers exactly when they're looking for you.
+                        </p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-primary/10 text-primary-fixed-dim text-[12px] font-bold rounded-full">SEARCH</span>
+<span class="px-3 py-1 bg-primary/10 text-primary-fixed-dim text-[12px] font-bold rounded-full">DISPLAY</span>
+<span class="px-3 py-1 bg-primary/10 text-primary-fixed-dim text-[12px] font-bold rounded-full">YOUTUBE</span>
+</div>
+</div>
+<div class="w-full md:w-64 h-48 rounded-lg overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="A clean, minimalist visualization of a Google search results page with highlighted 'Ads' sections. The UI is reimagined in a dark theme with glowing neon green borders around the top-performing results. Soft bokeh lighting in the background emphasizes a professional, high-performance marketing environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBykmvMRFSy4N0tNOH65Pt6mP3XgpYy1Q7g_eBxHFCBuyD49CP9fied3Cc2hQnkWl4eqeGH_BVVhtRL4Akl_u42L83Oi9CJWwTecNfVw7jnndMkVl88ntp7MPYJootNP5lMlPpETIJ_U59M6mGTkSwWuMur3fHGZqDuuprsoQTOiOdLkdQaYJJQCk3sovcpMZyutr7-4X5x6Cs_71eEVgQj8sV-Mn5t8Zpnh_GBl38Bi2Y_fWHxTREetzOGV1N_-US4dOaACS-wwQI"/>
+</div>
+</div>
+<!-- Meta Ads -->
+<div class="md:col-span-4 glass-card p-8 rounded-xl flex flex-col">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary text-4xl">share</span>
+<h3 class="font-headline-md text-headline-md">Meta Ads</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                        Precision audience targeting across Facebook &amp; Instagram. We blend high-impact creative with psychological triggers.
+                    </p>
+<div class="mt-auto">
+<img class="w-full h-32 object-cover rounded-lg mb-4" data-alt="A mobile phone interface showing a sleek, modern social media advertisement. The creative features vibrant green lighting and high-tech minimalist design. The background is a deep charcoal, and the focus is on a call-to-action button that glows with a subtle neon green light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZBKCcm_HbcKptcqo8t_b4QKo_e7024FwuV1dOGj6JSBQfuS1waYqIqdODJC68N-6Wjp90aA9d_UVIovoaW4PiGq81hgU95OiOagnQNjuDnnVIyQXgTCc7oRNFwPIFdNecCH4MsPDIUGO3hq1vpEJLFITa4ysHv1TJo2zgXqPi22vnURd0rpKx0kvp-GdeOtRn3UJXFAUnmBMhHXNgNkllnhgLwfmLYsI_Us5NNrLR-01qUItvZCmq1Ow36AZrXH-QQ6X3Ud59r8o"/>
+</div>
+</div>
+<!-- LinkedIn Ads -->
+<div class="md:col-span-5 glass-card p-8 rounded-xl flex flex-col">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary text-4xl">work</span>
+<h3 class="font-headline-md text-headline-md">LinkedIn Marketing</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        High-ticket B2B lead generation. We target decision-makers by job title, industry, and company size with surgical precision.
+                    </p>
+</div>
+<!-- Ad Performance Table -->
+<div class="md:col-span-7 glass-card p-8 rounded-xl overflow-x-auto">
+<table class="w-full text-left font-body-md">
+<thead>
+<tr class="border-b border-outline-variant/30">
+<th class="pb-4 font-label-md text-primary">Platform</th>
+<th class="pb-4 font-label-md text-primary">Intent</th>
+<th class="pb-4 font-label-md text-primary">Est. ROI</th>
+</tr>
+</thead>
+<tbody class="text-on-surface-variant">
+<tr class="border-b border-outline-variant/10">
+<td class="py-4 font-bold text-on-surface">Google Search</td>
+<td class="py-4">High (Direct)</td>
+<td class="py-4 text-primary-fixed-dim">450% - 800%</td>
+</tr>
+<tr class="border-b border-outline-variant/10">
+<td class="py-4 font-bold text-on-surface">Meta (IG/FB)</td>
+<td class="py-4">Medium (Awareness)</td>
+<td class="py-4 text-primary-fixed-dim">300% - 600%</td>
+</tr>
+<tr>
+<td class="py-4 font-bold text-on-surface">LinkedIn</td>
+<td class="py-4">B2B (Decision Maker)</td>
+<td class="py-4 text-primary-fixed-dim">250% - 500%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<!-- Sessão Carrossel Preço -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative group">
+    <div class="text-center mb-16">
+        <h2 class="font-headline-lg text-headline-lg mb-4">Strategic Pricing Plans</h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Choose the performance tier that aligns with your growth objectives.</p>
+    </div>
+
+    <div class="relative px-4">
+        <div id="carousel-container" class="flex overflow-x-auto pb-6 pt-6 gap-gutter snap-x scroll-smooth [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            
+            <div class="min-w-[340px] flex-1 snap-center glass-card p-8 rounded-2xl flex flex-col border-outline-variant/20">
+                <div class="mb-8">
+                    <h3 class="font-headline-md text-headline-md mb-2">Basic</h3>
+                    <p class="text-on-surface-variant font-body-md">Ideal for startups</p>
+                </div>
+                <div class="mb-8">
+                    <span class="text-4xl font-bold text-primary">$2,500</span>
+                    <span class="text-on-surface-variant">/mo</span>
+                </div>
+                <ul class="space-y-4 mb-10 flex-1">
+                    <li class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">check_circle</span>
+                        <span class="font-body-md">Google Search Ads</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">check_circle</span>
+                        <span class="font-body-md">Monthly Reporting</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">check_circle</span>
+                        <span class="font-body-md">Keyword Research</span>
+                    </li>
+                </ul>
+                <button class="w-full py-3 px-6 rounded-full border border-outline text-on-surface hover:bg-surface-variant transition-colors">Get Started</button>
+            </div>
+
+            <div class="min-w-[340px] flex-1 snap-center glass-card p-8 rounded-2xl flex flex-col border-2 border-primary relative">
+                <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-primary text-on-primary text-[11px] font-bold px-4 py-1 rounded-full uppercase tracking-wider whitespace-nowrap shadow-md z-10">Most Popular</span>
+                <div class="mb-8">
+                    <h3 class="font-headline-md text-headline-md text-primary mb-2">Growth</h3>
+                    <p class="text-on-surface-variant font-body-md">Scaling businesses</p>
+                </div>
+                <div class="mb-8">
+                    <span class="text-4xl font-bold text-primary">$5,000</span>
+                    <span class="text-on-surface-variant">/mo</span>
+                </div>
+                <ul class="space-y-4 mb-10 flex-1">
+                    <li class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">check_circle</span>
+                        <span class="font-body-md">Google & Meta Ads</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">check_circle</span>
+                        <span class="font-body-md">Bi-weekly Strategy Calls</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">check_circle</span>
+                        <span class="font-body-md">Custom Landing Pages</span>
+                    </li>
+                </ul>
+                <button class="w-full py-3 px-6 rounded-full bg-primary text-on-primary font-semibold hover:opacity-90 transition-opacity">Get Started</button>
+            </div>
+
+            <div class="min-w-[340px] flex-1 snap-center glass-card p-8 rounded-2xl flex flex-col border-outline-variant/20">
+                <div class="mb-8">
+                    <h3 class="font-headline-md text-headline-md mb-2">Professional</h3>
+                    <p class="text-on-surface-variant font-body-md">Established brands</p>
+                </div>
+                <div class="mb-8">
+                    <span class="text-4xl font-bold text-primary">$10,000</span>
+                    <span class="text-on-surface-variant">/mo</span>
+                </div>
+                <ul class="space-y-4 mb-10 flex-1">
+                    <li class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">check_circle</span>
+                        <span class="font-body-md">Full Omni-channel Suite</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">check_circle</span>
+                        <span class="font-body-md">Dedicated Account Lead</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">check_circle</span>
+                        <span class="font-body-md">Advanced Attribution</span>
+                    </li>
+                </ul>
+                <button class="w-full py-3 px-6 rounded-full border border-outline text-on-surface hover:bg-surface-variant transition-colors">Get Started</button>
+            </div>
+
+            <div class="min-w-[340px] flex-1 snap-center glass-card p-8 rounded-2xl flex flex-col border-outline-variant/20">
+                <div class="mb-8">
+                    <h3 class="font-headline-md text-headline-md mb-2">Enterprise</h3>
+                    <p class="text-on-surface-variant font-body-md">Large corporations</p>
+                </div>
+                <div class="mb-8">
+                    <span class="text-4xl font-bold text-primary">Custom</span>
+                </div>
+                <ul class="space-y-4 mb-10 flex-1">
+                    <li class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">check_circle</span>
+                        <span class="font-body-md">Global Scale Campaigns</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">check_circle</span>
+                        <span class="font-body-md">Custom API Integrations</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">check_circle</span>
+                        <span class="font-body-md">24/7 Priority Support</span>
+                    </li>
+                </ul>
+                <button class="w-full py-3 px-6 rounded-full border border-outline text-on-surface hover:bg-surface-variant transition-colors">Nosso Whatsapp</button>
+            </div>
+
+        </div>
+
+        <button id="prev-btn" class="absolute left-0 top-1/2 -translate-y-1/2 bg-surface/80 backdrop-blur-md text-on-surface p-3 rounded-full border border-outline-variant/30 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-auto hidden md:flex items-center justify-center z-10" aria-label="Previous plans">
+            <span class="material-symbols-outlined">arrow_back_ios_new</span>
+        </button>
+        <button id="next-btn" class="absolute right-0 top-1/2 -translate-y-1/2 bg-surface/80 backdrop-blur-md text-on-surface p-3 rounded-full border border-outline-variant/30 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-auto hidden md:flex items-center justify-center z-10" aria-label="Next plans">
+            <span class="material-symbols-outlined">arrow_forward_ios</span>
+        </button>
+    </div>
+</section>
+
+<!-- Enterprise Plan -->
+
+</li>
+</ul>
+</div>
+</div>
+</section><section class="py-24 bg-surface-container-lowest relative overflow-hidden">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-headline-lg text-headline-lg mb-6">Calculate Your Potential</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                        Use our predictive model to see how shifting your ad spend to Lumen's managed strategy can amplify your bottom line.
+                    </p>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary-fixed-dim">check_circle</span>
+<span class="font-body-md">Data-backed conversion rate improvements.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary-fixed-dim">check_circle</span>
+<span class="font-body-md">Lower Cost-Per-Acquisition (CPA) through optimization.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary-fixed-dim">check_circle</span>
+<span class="font-body-md">Predictable scaling models.</span>
+</li>
+</ul>
+</div>
+<div class="glass-card p-8 rounded-2xl border-primary/20 relative">
+<div class="absolute -top-4 -right-4 w-24 h-24 bg-primary/10 blur-3xl"></div>
+<div class="space-y-6">
+<div>
+<label class="font-label-md text-label-md block mb-2 uppercase opacity-60">Monthly Budget</label>
+<div class="relative">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 text-primary-fixed-dim">$</span>
+<input class="w-full bg-surface-container-high border-none rounded-lg py-3 pl-10 pr-4 focus:ring-2 focus:ring-primary/50 text-headline-md font-bold text-primary" type="number" value="10000"/>
+</div>
+</div>
+<div>
+<label class="font-label-md text-label-md block mb-2 uppercase opacity-60">Current ROI</label>
+<input class="w-full h-1 bg-surface-variant rounded-lg appearance-none cursor-pointer accent-primary" max="10" min="1" step="0.5" type="range" value="2.5"/>
+<div class="flex justify-between mt-2 text-primary font-bold">
+<span>1x</span>
+<span id="roi-value">2.5x</span>
+<span>10x</span>
+</div>
+</div>
+<div class="pt-6 border-t border-outline-variant/20">
+<div class="flex justify-between items-end mb-2">
+<span class="font-label-md opacity-60">PROJECTED MONTHLY REVENUE</span>
+<span class="font-headline-md text-primary-fixed-dim neon-glow px-2 py-1 rounded bg-primary/10">$45,000</span>
+</div>
+<p class="text-[12px] italic text-on-surface-variant">Based on our 15% optimization benchmark.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Consultation Form -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="max-w-4xl mx-auto glass-card rounded-3xl overflow-hidden grid grid-cols-1 md:grid-cols-2 shadow-2xl">
+<div class="p-10 bg-primary-container text-on-primary-container flex flex-col justify-center">
+<h2 class="font-headline-lg text-headline-lg mb-6">Schedule a Consultation</h2>
+<p class="font-body-md mb-8 opacity-80">
+                        Let's audit your current accounts and identify the leakage. Our specialists will provide a custom roadmap for your scale.
+                    </p>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined">call</span>
+<span class="font-label-md">+1 (800) LUMEN-ADS</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined">mail</span>
+<span class="font-label-md">growth@lumenmarketing.io</span>
+</div>
+</div>
+</div>
+<div class="p-10">
+<form class="space-y-4">
+<div class="grid grid-cols-2 gap-4">
+<input class="w-full bg-surface-container border-outline-variant/30 rounded-lg p-3 text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none" placeholder="First Name" type="text"/>
+<input class="w-full bg-surface-container border-outline-variant/30 rounded-lg p-3 text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none" placeholder="Last Name" type="text"/>
+</div>
+<input class="w-full bg-surface-container border-outline-variant/30 rounded-lg p-3 text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none" placeholder="Work Email" type="email"/>
+<select class="w-full bg-surface-container border-outline-variant/30 rounded-lg p-3 text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none text-on-surface-variant">
+<option>Monthly Budget</option>
+<option>$5k - $10k</option>
+<option>$10k - $50k</option>
+<option>$50k+</option>
+</select>
+<textarea class="w-full bg-surface-container border-outline-variant/30 rounded-lg p-3 text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none" placeholder="Tell us about your goals..." rows="3"></textarea>
+<button class="w-full bg-primary-container text-on-primary-container font-label-md py-4 rounded-lg hover:brightness-110 transition-all" type="submit">Submit Request</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant/10">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-desktop max-w-container-max mx-auto gap-gutter">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">Lumen Growth</span>
+<p class="font-body-md text-body-md text-on-surface dark:text-on-surface opacity-60">ROI-focused advertising for the digital age.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-label-md text-label-md text-on-secondary-container dark:text-on-secondary-container hover:text-primary-fixed-dim dark:hover:text-primary-fixed-dim transition-all" href="#">Privacy Policy</a>
+<a class="font-label-md text-label-md text-on-secondary-container dark:text-on-secondary-container hover:text-primary-fixed-dim dark:hover:text-primary-fixed-dim transition-all" href="#">Terms of Service</a>
+<a class="font-label-md text-label-md text-on-secondary-container dark:text-on-secondary-container hover:text-primary-fixed-dim dark:hover:text-primary-fixed-dim transition-all" href="#">Case Studies</a>
+<a class="font-label-md text-label-md text-on-secondary-container dark:text-on-secondary-container hover:text-primary-fixed-dim dark:hover:text-primary-fixed-dim transition-all" href="#">Careers</a>
+</div>
+<p class="font-label-md text-label-md text-on-secondary-container dark:text-on-secondary-container opacity-40">© 2024 Lumen Growth. All rights reserved.</p>
+</div>
+</footer>
+<script>
+        // Micro-interaction for ROI calculator range
+        const range = document.querySelector('input[type="range"]');
+        const valueDisplay = document.getElementById('roi-value');
+        if (range && valueDisplay) {
+            range.addEventListener('input', (e) => {
+                valueDisplay.textContent = e.target.value + 'x';
+            });
+        }
+
+        // Simple scroll reveal effect for cards
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-8');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-8');
+            observer.observe(card);
+        });
+    </script>
+</body></html>
