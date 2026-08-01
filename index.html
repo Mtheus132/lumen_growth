@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 
-<html class="dark" lang="en"><head>
+<html class="dark" lang="pt-BR"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Ads &amp; PPC Management | Lumen Growth</title>
+<title>Lumen Growth | Agência de Marketing</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script src="script.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <style>
         .material-symbols-outlined {
@@ -20,491 +18,416 @@
             transition: all 0.3s ease;
         }
         .glass-card:hover {
-            border-color: rgba(42, 229, 0, 0.4);
-            box-shadow: 0 0 20px rgba(42, 229, 0, 0.1);
+            border-color: #2ae500;
+            box-shadow: 0 0 20px rgba(42, 229, 0, 0.15);
         }
         .neon-glow {
-            box-shadow: 0 0 15px rgba(42, 229, 0, 0.3);
+            text-shadow: 0 0 10px rgba(42, 229, 0, 0.5), 0 0 20px rgba(42, 229, 0, 0.3);
         }
         .glow-line {
             height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(42, 229, 0, 0.5), transparent);
+            background: linear-gradient(90deg, transparent, #2ae500, transparent);
+            opacity: 0.3;
         }
-        body {
-            background-color: #0B0B0B;
-            color: #e1e3e4;
+        .bg-obsidian { background-color: #0B0B0B; }
+        
+        @keyframes pulse-glow {
+            0%, 100% { opacity: 0.5; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.05); }
+        }
+        .animate-lumen {
+            animation: pulse-glow 4s ease-in-out infinite;
         }
     </style>
 <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "tertiary": "#fdf9f9",
-                    "surface-dim": "#111415",
-                    "on-primary-fixed": "#022100",
-                    "surface-container-high": "#282a2b",
-                    "inverse-primary": "#106e00",
-                    "on-primary-fixed-variant": "#095300",
-                    "primary-fixed-dim": "#2ae500",
-                    "on-secondary-fixed": "#1c1b1b",
-                    "surface-variant": "#323536",
-                    "on-error-container": "#ffdad6",
-                    "secondary-fixed": "#e5e2e1",
-                    "primary-fixed": "#79ff5b",
-                    "on-error": "#690005",
-                    "surface-container-highest": "#323536",
-                    "primary": "#efffe3",
-                    "inverse-surface": "#e1e3e4",
-                    "surface": "#111415",
-                    "tertiary-fixed": "#e5e2e1",
-                    "error": "#ffb4ab",
-                    "secondary": "#c9c6c5",
-                    "on-primary": "#053900",
-                    "on-secondary": "#313030",
-                    "error-container": "#93000a",
-                    "background": "#111415",
-                    "surface-tint": "#2ae500",
-                    "on-primary-container": "#107100",
-                    "surface-container": "#1d2021",
-                    "on-tertiary": "#313030",
-                    "tertiary-fixed-dim": "#c8c6c5",
-                    "on-surface": "#e1e3e4",
-                    "on-secondary-container": "#bab8b7",
-                    "surface-bright": "#373a3b",
-                    "primary-container": "#39ff14",
-                    "on-tertiary-fixed": "#1c1b1b",
-                    "tertiary-container": "#e0dddc",
-                    "inverse-on-surface": "#2e3132",
-                    "on-secondary-fixed-variant": "#474646",
-                    "on-tertiary-fixed-variant": "#474746",
-                    "outline-variant": "#3c4b35",
-                    "on-background": "#e1e3e4",
-                    "on-surface-variant": "#baccb0",
-                    "surface-container-low": "#191c1d",
-                    "outline": "#85967c",
-                    "surface-container-lowest": "#0c0f10",
-                    "on-tertiary-container": "#626161",
-                    "secondary-container": "#4a4949"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.25rem",
-                    "lg": "0.5rem",
-                    "xl": "0.75rem",
-                    "full": "9999px"
-            },
-            "spacing": {
-                    "margin-desktop": "64px",
-                    "margin-mobile": "24px",
-                    "container-max": "1280px",
-                    "gutter": "24px",
-                    "unit": "8px"
-            },
-            "fontFamily": {
-                    "headline-lg": ["Montserrat"],
-                    "display-lg-mobile": ["Montserrat"],
-                    "label-md": ["Inter"],
-                    "body-md": ["Inter"],
-                    "headline-md": ["Montserrat"],
-                    "display-lg": ["Montserrat"],
-                    "body-lg": ["Inter"]
-            },
-            "fontSize": {
-                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "700"}],
-                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "800"}],
-                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
-                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
-                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#fdf9f9",
+                        "surface-dim": "#111415",
+                        "on-primary-fixed": "#022100",
+                        "surface-container-high": "#282a2b",
+                        "inverse-primary": "#106e00",
+                        "on-primary-fixed-variant": "#095300",
+                        "primary-fixed-dim": "#2ae500",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "surface-variant": "#323536",
+                        "on-error-container": "#ffdad6",
+                        "secondary-fixed": "#e5e2e1",
+                        "primary-fixed": "#79ff5b",
+                        "on-error": "#690005",
+                        "surface-container-highest": "#323536",
+                        "primary": "#efffe3",
+                        "inverse-surface": "#e1e3e4",
+                        "surface": "#111415",
+                        "tertiary-fixed": "#e5e2e1",
+                        "error": "#ffb4ab",
+                        "secondary-fixed-dim": "#c9c6c5",
+                        "on-primary": "#053900",
+                        "on-secondary": "#313030",
+                        "error-container": "#93000a",
+                        "background": "#111415",
+                        "surface-tint": "#2ae500",
+                        "on-primary-container": "#107100",
+                        "surface-container": "#1d2021",
+                        "on-tertiary": "#313030",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "on-surface": "#e1e3e4",
+                        "on-secondary-container": "#bab8b7",
+                        "surface-bright": "#373a3b",
+                        "primary-container": "#39ff14",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "tertiary-container": "#e0dddc",
+                        "inverse-on-surface": "#2e3132",
+                        "on-secondary-fixed-variant": "#474646",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "outline-variant": "#3c4b35",
+                        "secondary": "#c9c6c5",
+                        "on-background": "#e1e3e4",
+                        "on-surface-variant": "#baccb0",
+                        "surface-container-low": "#191c1d",
+                        "outline": "#85967c",
+                        "surface-container-lowest": "#0c0f10",
+                        "on-tertiary-container": "#626161",
+                        "secondary-container": "#4a4949"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "margin-mobile": "24px",
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Montserrat"],
+                        "display-lg-mobile": ["Montserrat"],
+                        "label-md": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Montserrat"],
+                        "display-lg": ["Montserrat"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                        "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "800"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                }
             }
-          },
-        },
-      }
+        }
     </script>
 </head>
-<body class="selection:bg-primary-container selection:text-on-primary-container">
-<!-- TopNavBar -->
+<body class="bg-surface text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- Barra de Navegação Superior -->
 <nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-md border-b border-outline-variant/20 shadow-[0_0_15px_rgba(42,229,0,0.1)]">
-<div class="flex justify-between items-center h-20 px-margin-desktop max-w-container-max mx-auto">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
 <a class="font-headline-md text-headline-md font-bold tracking-tighter text-primary dark:text-primary-fixed" href="#">Lumen Growth</a>
 <div class="hidden md:flex items-center gap-8">
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">SEO</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">Criação de Site & LP</a>
-<a class="font-label-md text-label-md text-primary dark:text-primary-fixed border-b-2 border-primary transition-colors duration-300" href="#">Ads</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">Resultados</a>
+<a class="font-label-md text-label-md text-primary dark:text-primary-fixed border-b-2 border-primary hover:text-primary transition-colors duration-300" href="#">Inicio</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="/trafego_pago.html">Tráfego Pago</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="/seo.html">SEO</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="/criacao_de_site.html">Criação de Site & LP</a>
 </div>
-<button class="bg-primary-container text-on-primary-container font-label-md px-6 py-2 rounded-full hover:opacity-80 active:scale-95 transition-all">Fale Conosco</button>
+<button class="bg-primary-container text-on-primary-fixed px-6 py-2 rounded-full font-label-md hover:shadow-[0_0_12px_#2ae500] transition-all active:scale-95">
+            Fale Conosco
+        </button>
 </div>
 </nav>
 <main class="pt-20">
-<!-- Hero Section -->
-<section class="relative min-h-[819px] flex items-center justify-center overflow-hidden px-margin-mobile md:px-margin-desktop">
-<div class="absolute inset-0 z-0">
-<div class="absolute inset-0 bg-gradient-to-b from-transparent via-background to-background"></div>
-<img class="w-full h-full object-cover opacity-30" data-alt="A cinematic, high-contrast image of a futuristic digital command center. Deep charcoal surfaces are illuminated by vibrant neon green data streams and complex analytical graphs on holographic displays. The atmosphere is sophisticated and technological, reflecting a dark-mode-first aesthetic with sharp focus and professional lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4q-oY_NdudXh5U6PkAD4lcAbJAgGX5VFHrHASrTYXm55zz-FkxXXCeTGos9SUYvtUUAWM1ikj19BD4gWWdk4y0e1MJxpLV8WivW07_GdNIykYw0g1ntfTL9IdndgNk_-1JBllqS2hl79mVsrZUbg1qzlAXgkbig7V0aDdwcMKhI5p-TjqohJPl0nYVA-tDwaJzqmeb5hjeldOElJAGjWRu-05uL7M71YDRAZLl8jIV11vuzwTBDcnkdCu6cWY7rTW2rVaYVtWOro"/>
+<!-- Seção Hero -->
+<section class="relative min-h-[921px] flex items-center overflow-hidden px-margin-mobile md:px-margin-desktop">
+<!-- Efeito Atmosférico de Fundo -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 blur-[120px] rounded-full animate-lumen"></div>
+<div class="max-w-container-max mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-gutter relative z-10">
+<div class="md:col-span-8 lg:col-span-7">
+<span class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary-fixed-dim font-label-md mb-6 border border-primary/20">PERFORMANCE DE PRÓXIMA GERAÇÃO</span>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-6 leading-none">
+                    Acenda o Seu <span class="text-primary neon-glow italic">Potencial</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-10">
+                    Aproveite o poder do SEO baseado em dados e estratégias de marketing eletrizantes para iluminar o verdadeiro valor da sua marca na escuridão digital.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary-container text-on-primary-fixed px-10 py-4 rounded-lg font-headline-md hover:shadow-[0_0_20px_#2ae500] transition-all active:scale-95">
+                        Comece Seu Crescimento
+                    </button>
+<button class="border border-primary-fixed-dim text-primary-fixed-dim px-10 py-4 rounded-lg font-headline-md hover:bg-primary/5 transition-all">
+                        Ver Cases de Sucesso
+                    </button>
 </div>
-<div class="relative z-10 text-center max-w-4xl mx-auto">
-<div class="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-primary/10 border border-primary/20 text-primary-fixed-dim font-label-md text-label-md">
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
-TRÁFEGO PAGO DE ALTA PERFORMANCE
-                </div>
-<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary via-white to-primary-fixed">
-    Anúncios Otimizados para Gerar Vendas e Leads Qualificados.                </h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10">
-    Campanhas estratégicas no Google, Meta, TikTok e LinkedIn ADS. Não compramos apenas cliques: construímos uma máquina de vendas previsível combinando dados, inteligência de tráfego e criativos de alta conversão.                </p>
-<div class="flex flex-col md:flex-row items-center justify-center gap-4">
-<button class="w-full md:w-auto bg-primary-container text-on-primary-container font-label-md px-8 py-4 rounded-full neon-glow hover:opacity-90 active:scale-95 transition-all">Solicite um orçamento no WhatsApp</button>
-<button class="w-full md:w-auto border border-primary text-primary font-label-md px-8 py-4 rounded-full hover:bg-primary/5 transition-all">Quero Escalar Minhas Vendas</button>
+</div>
+<!-- Imagem Hero/Sobreposição Gráfica -->
+<div class="hidden lg:block lg:col-span-5 relative">
+<div class="glass-card aspect-square rounded-3xl overflow-hidden p-2 transform rotate-3 hover:rotate-0 transition-transform duration-700">
+<img alt="Dashboard de Marketing" class="w-full h-full object-cover rounded-2xl grayscale hover:grayscale-0 transition-all duration-700" data-alt="A futuristic dark-mode digital dashboard interface showing glowing green neon data visualizations and analytics charts. The screen reflects soft green light onto a sleek obsidian desk surface in a high-tech office environment at night. The atmosphere is professional, cutting-edge, and highly immersive with deep blacks and vibrant neon accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOHLdUtWiPsDYjZxDZB4pi9xeIR3Gt1fC9S-FanPNeNv0SActL9Wno8XblS5keHkOYxIzO-ActNjfvMDzoLuSzatuzujHcWBMP8XRrf1sR2rgq60-bQSU0XbzNv7hCGoG8comeSOCn7P2gPn0E-j3ZpQgJMuby5gppYnv9UwrOY3xNFgV4QoY5ioEs6QwzBXNfFQpYC2vxC9oYhhofutWmP0RvZ5f6EmlC-0--X34JieFtNH6unZ2SB5HBdrR_tofapHfLh1cL9uc"/>
+</div>
 </div>
 </div>
 </section>
-<!-- Glow Divider -->
-<div class="glow-line max-w-container-max mx-auto"></div>
-<!-- Platforms Section (Bento Grid) -->
-<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-<h2 class="font-headline-lg text-headline-lg text-center mb-16">O Onde Seu Cliente Está, Nós Anunciamos</h2>
-<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
-<!-- Google Ads -->
-<div class="md:col-span-8 glass-card p-8 rounded-xl flex flex-col md:flex-row gap-8 items-center">
-<div class="flex-1">
-<div class="flex items-center gap-3 mb-4">
-<span class="material-symbols-outlined text-primary text-4xl">search</span>
-<h3 class="font-headline-md text-headline-md">Google Ads</h3>
+<!-- Divisor -->
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="glow-line"></div>
 </div>
-<p class="font-body-md text-body-md text-on-surface-variant mb-6">
-    Domine as buscas de intenção. Otimizamos campanhas para palavras-chave de alta conversão e lances inteligentes, capturando potenciais clientes no exato momento em que procuram pelo seu produto ou serviço.
-                        </p>
+<!-- Seção de Expertise -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-gutter">
+<div class="max-w-2xl">
+<h2 class="font-headline-lg text-headline-lg text-white mb-4">Nossa Especialidade</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Nós não apenas seguimos tendências; nós as criamos. Nossa abordagem multicanal garante que sua marca seja visível exatamente onde mais importa.</p>
+</div>
+<div class="text-primary font-label-md flex items-center gap-2 cursor-pointer group">
+                    EXPLORE NOSSOS SERVIÇOS <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card Tráfego Pago -->
+<div class="glass-card p-10 rounded-2xl flex flex-col items-start gap-6">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary-fixed-dim">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">ads_click</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-white">Tráfego Pago</h3>
+<p class="text-on-surface-variant font-body-md">Campanhas estratégicas multicanal no Google, Meta, LinkedIn e TikTok projetadas para ROI máximo e escala.</p>
 <div class="flex flex-wrap gap-2">
-<span class="px-3 py-1 bg-primary/10 text-primary-fixed-dim text-[12px] font-bold rounded-full">SEARCH</span>
-<span class="px-3 py-1 bg-primary/10 text-primary-fixed-dim text-[12px] font-bold rounded-full">DISPLAY</span>
-<span class="px-3 py-1 bg-primary/10 text-primary-fixed-dim text-[12px] font-bold rounded-full">YOUTUBE</span>
+<span class="px-3 py-1 rounded-full bg-surface-variant text-[12px] font-bold text-primary-fixed-dim">SOCIAL ADS</span>
+<span class="px-3 py-1 rounded-full bg-surface-variant text-[12px] font-bold text-primary-fixed-dim">SEARCH</span>
 </div>
 </div>
-<div class="w-full md:w-64 h-48 rounded-lg overflow-hidden shrink-0">
-<img class="w-full h-full object-cover" data-alt="A clean, minimalist visualization of a Google search results page with highlighted 'Ads' sections. The UI is reimagined in a dark theme with glowing neon green borders around the top-performing results. Soft bokeh lighting in the background emphasizes a professional, high-performance marketing environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBykmvMRFSy4N0tNOH65Pt6mP3XgpYy1Q7g_eBxHFCBuyD49CP9fied3Cc2hQnkWl4eqeGH_BVVhtRL4Akl_u42L83Oi9CJWwTecNfVw7jnndMkVl88ntp7MPYJootNP5lMlPpETIJ_U59M6mGTkSwWuMur3fHGZqDuuprsoQTOiOdLkdQaYJJQCk3sovcpMZyutr7-4X5x6Cs_71eEVgQj8sV-Mn5t8Zpnh_GBl38Bi2Y_fWHxTREetzOGV1N_-US4dOaACS-wwQI"/>
+<!-- Card SEO -->
+<div class="glass-card p-10 rounded-2xl border-primary/30 flex flex-col items-start gap-6 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-primary/5 blur-2xl rounded-full"></div>
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary-fixed-dim">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">search</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-white">SEO de Precisão</h3>
+<p class="text-on-surface-variant font-body-md">Domine os resultados de busca através de excelência técnica e estratégias de conteúdo semântico que capturam tráfego de alta intenção.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 rounded-full bg-surface-variant text-[12px] font-bold text-primary-fixed-dim">RANKING</span>
+<span class="px-3 py-1 rounded-full bg-surface-variant text-[12px] font-bold text-primary-fixed-dim">AUTORIDADE</span>
 </div>
 </div>
-<!-- Meta Ads -->
-<div class="md:col-span-4 glass-card p-8 rounded-xl flex flex-col">
-<div class="flex items-center gap-3 mb-4">
-<span class="material-symbols-outlined text-primary text-4xl">share</span>
-<h3 class="font-headline-md text-headline-md">Meta Ads</h3>
+<!-- Card Web Design -->
+<div class="glass-card p-10 rounded-2xl flex flex-col items-start gap-6">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary-fixed-dim">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">web</span>
 </div>
-<p class="font-body-md text-body-md text-on-surface-variant mb-8">
-    Segmentação precisa de público no Instagram e Facebook. Combinamos criativos de alto impacto com gatilhos mentais para atrair e converter em clientes.                    </p>
-<div class="mt-auto">
-<img class="w-full h-32 object-cover rounded-lg mb-4" data-alt="A mobile phone interface showing a sleek, modern social media advertisement. The creative features vibrant green lighting and high-tech minimalist design. The background is a deep charcoal, and the focus is on a call-to-action button that glows with a subtle neon green light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZBKCcm_HbcKptcqo8t_b4QKo_e7024FwuV1dOGj6JSBQfuS1waYqIqdODJC68N-6Wjp90aA9d_UVIovoaW4PiGq81hgU95OiOagnQNjuDnnVIyQXgTCc7oRNFwPIFdNecCH4MsPDIUGO3hq1vpEJLFITa4ysHv1TJo2zgXqPi22vnURd0rpKx0kvp-GdeOtRn3UJXFAUnmBMhHXNgNkllnhgLwfmLYsI_Us5NNrLR-01qUItvZCmq1Ow36AZrXH-QQ6X3Ud59r8o"/>
+<h3 class="font-headline-md text-headline-md text-white">Web Design &amp; Landing Pages</h3>
+<p class="text-on-surface-variant font-body-md">Sites e landing pages de alta conversão projetados para transformar visitantes em clientes leais com UX impecável.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 rounded-full bg-surface-variant text-[12px] font-bold text-primary-fixed-dim">CONVERSÃO</span>
+<span class="px-3 py-1 rounded-full bg-surface-variant text-[12px] font-bold text-primary-fixed-dim">UX/UI</span>
 </div>
 </div>
-<!-- LinkedIn Ads -->
-<div class="md:col-span-5 glass-card p-8 rounded-xl flex flex-col">
-<div class="flex items-center gap-3 mb-4">
-<span class="material-symbols-outlined text-primary text-4xl">work</span>
-<h3 class="font-headline-md text-headline-md">LinkedIn Marketing</h3>
-</div>
-<p class="font-body-md text-body-md text-on-surface-variant">
-    Geração de leads B2B e High-Ticket. Atingimos tomadores de decisão por cargo, setor e tamanho de empresa com precisão cirúrgica.                    </p>
-</div>
-<!-- Ad Performance Table -->
-<div class="md:col-span-7 glass-card p-8 rounded-xl overflow-x-auto">
-<table class="w-full text-left font-body-md">
-<thead>
-<tr class="border-b border-outline-variant/30">
-<th class="pb-4 font-label-md text-primary">Platforma</th>
-<th class="pb-4 font-label-md text-primary">Objetivo</th>
-<th class="pb-4 font-label-md text-primary">Foco Principal"</th>
-</tr>
-</thead>
-<tbody class="text-on-surface-variant">
-<tr class="border-b border-outline-variant/10">
-<td class="py-4 font-bold text-on-surface">Google Search</td>
-<td class="py-4">Alta (Demanda Direta)</td>
-<td class="py-4 text-primary-fixed-dim">450% - 800%</td>
-</tr>
-<tr class="border-b border-outline-variant/10">
-<td class="py-4 font-bold text-on-surface">Meta (IG/FB)</td>
-<td class="py-4">Média (Awareness)</td>
-<td class="py-4 text-primary-fixed-dim">300% - 600%</td>
-</tr>
-<tr>
-<td class="py-4 font-bold text-on-surface">LinkedIn</td>
-<td class="py-4">B2B (Tomador de decisão)</td>
-<td class="py-4 text-primary-fixed-dim">250% - 500%</td>
-</tr>
-</tbody>
-</table>
 </div>
 </div>
 </section>
-
-<!-- Sessão Carrossel Preço -->
-<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative group">
-    <div class="text-center mb-16">
-        <h2 class="font-headline-lg text-headline-lg mb-4">Strategic Pricing Plans</h2>
-        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Choose the performance tier that aligns with your growth objectives.</p>
-    </div>
-
-    <div class="relative px-4">
-        <div id="carousel-container" class="flex overflow-x-auto pb-6 pt-6 gap-gutter snap-x scroll-smooth [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-            
-            <div class="min-w-[340px] flex-1 snap-center glass-card p-8 rounded-2xl flex flex-col border-outline-variant/20">
-                <div class="mb-8">
-                    <h3 class="font-headline-md text-headline-md mb-2">Basic</h3>
-                    <p class="text-on-surface-variant font-body-md">Ideal for startups</p>
-                </div>
-                <div class="mb-8">
-                    <span class="text-4xl font-bold text-primary">$2,500</span>
-                    <span class="text-on-surface-variant">/mo</span>
-                </div>
-                <ul class="space-y-4 mb-10 flex-1">
-                    <li class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">check_circle</span>
-                        <span class="font-body-md">Google Search Ads</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">check_circle</span>
-                        <span class="font-body-md">Monthly Reporting</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">check_circle</span>
-                        <span class="font-body-md">Keyword Research</span>
-                    </li>
-                </ul>
-                <button class="w-full py-3 px-6 rounded-full border border-outline text-on-surface hover:bg-surface-variant transition-colors">Get Started</button>
-            </div>
-
-            <div class="min-w-[340px] flex-1 snap-center glass-card p-8 rounded-2xl flex flex-col border-2 border-primary relative">
-                <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-primary text-on-primary text-[11px] font-bold px-4 py-1 rounded-full uppercase tracking-wider whitespace-nowrap shadow-md z-10">Most Popular</span>
-                <div class="mb-8">
-                    <h3 class="font-headline-md text-headline-md text-primary mb-2">Growth</h3>
-                    <p class="text-on-surface-variant font-body-md">Scaling businesses</p>
-                </div>
-                <div class="mb-8">
-                    <span class="text-4xl font-bold text-primary">$5,000</span>
-                    <span class="text-on-surface-variant">/mo</span>
-                </div>
-                <ul class="space-y-4 mb-10 flex-1">
-                    <li class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">check_circle</span>
-                        <span class="font-body-md">Google & Meta Ads</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">check_circle</span>
-                        <span class="font-body-md">Bi-weekly Strategy Calls</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">check_circle</span>
-                        <span class="font-body-md">Custom Landing Pages</span>
-                    </li>
-                </ul>
-                <button class="w-full py-3 px-6 rounded-full bg-primary text-on-primary font-semibold hover:opacity-90 transition-opacity">Get Started</button>
-            </div>
-
-            <div class="min-w-[340px] flex-1 snap-center glass-card p-8 rounded-2xl flex flex-col border-outline-variant/20">
-                <div class="mb-8">
-                    <h3 class="font-headline-md text-headline-md mb-2">Professional</h3>
-                    <p class="text-on-surface-variant font-body-md">Established brands</p>
-                </div>
-                <div class="mb-8">
-                    <span class="text-4xl font-bold text-primary">$10,000</span>
-                    <span class="text-on-surface-variant">/mo</span>
-                </div>
-                <ul class="space-y-4 mb-10 flex-1">
-                    <li class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">check_circle</span>
-                        <span class="font-body-md">Full Omni-channel Suite</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">check_circle</span>
-                        <span class="font-body-md">Dedicated Account Lead</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">check_circle</span>
-                        <span class="font-body-md">Advanced Attribution</span>
-                    </li>
-                </ul>
-                <button class="w-full py-3 px-6 rounded-full border border-outline text-on-surface hover:bg-surface-variant transition-colors">Get Started</button>
-            </div>
-
-            <div class="min-w-[340px] flex-1 snap-center glass-card p-8 rounded-2xl flex flex-col border-outline-variant/20">
-                <div class="mb-8">
-                    <h3 class="font-headline-md text-headline-md mb-2">Enterprise</h3>
-                    <p class="text-on-surface-variant font-body-md">Large corporations</p>
-                </div>
-                <div class="mb-8">
-                    <span class="text-4xl font-bold text-primary">Custom</span>
-                </div>
-                <ul class="space-y-4 mb-10 flex-1">
-                    <li class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">check_circle</span>
-                        <span class="font-body-md">Global Scale Campaigns</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">check_circle</span>
-                        <span class="font-body-md">Custom API Integrations</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">check_circle</span>
-                        <span class="font-body-md">24/7 Priority Support</span>
-                    </li>
-                </ul>
-                <button class="w-full py-3 px-6 rounded-full border border-outline text-on-surface hover:bg-surface-variant transition-colors">Nosso Whatsapp</button>
-            </div>
-
-        </div>
-
-        <button id="prev-btn" class="absolute left-0 top-1/2 -translate-y-1/2 bg-surface/80 backdrop-blur-md text-on-surface p-3 rounded-full border border-outline-variant/30 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-auto hidden md:flex items-center justify-center z-10" aria-label="Previous plans">
-            <span class="material-symbols-outlined">arrow_back_ios_new</span>
-        </button>
-        <button id="next-btn" class="absolute right-0 top-1/2 -translate-y-1/2 bg-surface/80 backdrop-blur-md text-on-surface p-3 rounded-full border border-outline-variant/30 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-auto hidden md:flex items-center justify-center z-10" aria-label="Next plans">
-            <span class="material-symbols-outlined">arrow_forward_ios</span>
-        </button>
-    </div>
-</section>
-
-<!-- Enterprise Plan -->
-
-</li>
-</ul>
-</div>
-</div>
-</section><section class="py-24 bg-surface-container-lowest relative overflow-hidden">
-<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent"></div>
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<!-- Seção de Estatísticas -->
+<section class="py-24 bg-surface-container-lowest relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(#2ae500 1px, transparent 0); background-size: 40px 40px;"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
 <div>
-<h2 class="font-headline-lg text-headline-lg mb-6">Calculate Your Potential</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
-                        Use our predictive model to see how shifting your ad spend to Lumen's managed strategy can amplify your bottom line.
+<h2 class="font-headline-lg text-headline-lg text-white mb-8">Resultados Baseados em Dados</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">
+                        Nossa filosofia é simples: se não pode ser medido, não é bem-sucedido. Oferecemos transparência em tempo real sobre cada métrica que impulsiona o seu negócio.
                     </p>
-<ul class="space-y-4">
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary-fixed-dim">check_circle</span>
-<span class="font-body-md">Data-backed conversion rate improvements.</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary-fixed-dim">check_circle</span>
-<span class="font-body-md">Lower Cost-Per-Acquisition (CPA) through optimization.</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary-fixed-dim">check_circle</span>
-<span class="font-body-md">Predictable scaling models.</span>
-</li>
-</ul>
-</div>
-<div class="glass-card p-8 rounded-2xl border-primary/20 relative">
-<div class="absolute -top-4 -right-4 w-24 h-24 bg-primary/10 blur-3xl"></div>
-<div class="space-y-6">
+<div class="grid grid-cols-2 gap-8">
 <div>
-<label class="font-label-md text-label-md block mb-2 uppercase opacity-60">Monthly Budget</label>
+<div class="text-[48px] font-extrabold text-primary neon-glow leading-none mb-2">240%</div>
+<div class="font-label-md text-on-surface-variant uppercase tracking-widest">Aumento Médio de ROAS</div>
+</div>
+<div>
+<div class="text-[48px] font-extrabold text-primary neon-glow leading-none mb-2">12.5M</div>
+<div class="font-label-md text-on-surface-variant uppercase tracking-widest">Leads Gerados</div>
+</div>
+<div>
+<div class="text-[48px] font-extrabold text-primary neon-glow leading-none mb-2">142k</div>
+<div class="font-label-md text-on-surface-variant uppercase tracking-widest">Palavras-chave Rankeadas</div>
+</div>
+<div>
+<div class="text-[48px] font-extrabold text-primary neon-glow leading-none mb-2">18ms</div>
+<div class="font-label-md text-on-surface-variant uppercase tracking-widest">Latência de Dados</div>
+</div>
+</div>
+</div>
 <div class="relative">
-<span class="absolute left-4 top-1/2 -translate-y-1/2 text-primary-fixed-dim">$</span>
-<input class="w-full bg-surface-container-high border-none rounded-lg py-3 pl-10 pr-4 focus:ring-2 focus:ring-primary/50 text-headline-md font-bold text-primary" type="number" value="10000"/>
+<div class="bg-obsidian border border-outline-variant/30 rounded-3xl p-8 shadow-2xl">
+<div class="flex items-center justify-between mb-8">
+<div class="flex gap-2">
+<div class="w-3 h-3 rounded-full bg-error"></div>
+<div class="w-3 h-3 rounded-full bg-secondary"></div>
+<div class="w-3 h-3 rounded-full bg-primary"></div>
+</div>
+<div class="text-[12px] font-mono text-outline">ANALYTICS_AO_VIVO_V4.0</div>
+</div>
+<div class="space-y-6">
+<div class="h-4 w-full bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[85%] shadow-[0_0_10px_#2ae500]"></div>
+</div>
+<div class="h-4 w-full bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[65%] shadow-[0_0_10px_#2ae500]"></div>
+</div>
+<div class="h-4 w-full bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[92%] shadow-[0_0_10px_#2ae500]"></div>
+</div>
+<div class="h-4 w-full bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[40%] shadow-[0_0_10px_#2ae500]"></div>
 </div>
 </div>
-<div>
-<label class="font-label-md text-label-md block mb-2 uppercase opacity-60">Current ROI</label>
-<input class="w-full h-1 bg-surface-variant rounded-lg appearance-none cursor-pointer accent-primary" max="10" min="1" step="0.5" type="range" value="2.5"/>
-<div class="flex justify-between mt-2 text-primary font-bold">
-<span>1x</span>
-<span id="roi-value">2.5x</span>
-<span>10x</span>
+<div class="mt-8 pt-8 border-t border-outline-variant/20 flex justify-between">
+<div class="flex flex-col">
+<span class="text-[10px] text-outline">VOLUME TOTAL</span>
+<span class="text-white font-bold">$1.2M+</span>
+</div>
+<div class="flex flex-col text-right">
+<span class="text-[10px] text-outline">STATUS</span>
+<span class="text-primary font-bold">OTIMIZADO</span>
 </div>
 </div>
-<div class="pt-6 border-t border-outline-variant/20">
-<div class="flex justify-between items-end mb-2">
-<span class="font-label-md opacity-60">PROJECTED MONTHLY REVENUE</span>
-<span class="font-headline-md text-primary-fixed-dim neon-glow px-2 py-1 rounded bg-primary/10">$45,000</span>
-</div>
-<p class="text-[12px] italic text-on-surface-variant">Based on our 15% optimization benchmark.</p>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- Consultation Form -->
-<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-<div class="max-w-4xl mx-auto glass-card rounded-3xl overflow-hidden grid grid-cols-1 md:grid-cols-2 shadow-2xl">
-<div class="p-10 bg-primary-container text-on-primary-container flex flex-col justify-center">
-<h2 class="font-headline-lg text-headline-lg mb-6">Schedule a Consultation</h2>
-<p class="font-body-md mb-8 opacity-80">
-                        Let's audit your current accounts and identify the leakage. Our specialists will provide a custom roadmap for your scale.
-                    </p>
-<div class="space-y-4">
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined">call</span>
-<span class="font-label-md">+1 (800) LUMEN-ADS</span>
+<!-- Seção de Depoimentos -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-white mb-4">Sucesso dos Clientes</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Conheça as marcas que ajudamos a brilhar.</p>
 </div>
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined">mail</span>
-<span class="font-label-md">growth@lumenmarketing.io</span>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Depoimento 1 -->
+<div class="glass-card p-8 rounded-2xl italic">
+<div class="flex gap-1 text-primary mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface mb-8 font-body-md">"A Lumen Marketing não nos deu apenas uma estratégia; eles nos deram uma vantagem competitiva. Nosso tráfego orgânico triplicou em apenas quatro meses."</p>
+<div class="flex items-center gap-4 not-italic">
+<div class="w-12 h-12 rounded-full bg-surface-variant overflow-hidden">
+<img alt="Retrato do Cliente" class="w-full h-full object-cover" data-alt="A professional headshot of a creative director in his 40s with a modern haircut and glasses, smiling confidently. The lighting is dramatic and moody with deep shadows and a soft green backlight reflecting the tech-focused brand aesthetic. The background is a blurred dark studio setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNchGebh1jz1yfo09_aqxl5zcVgqdM0DtvVNQgsmc5cx3Me4tuxg_xPyWeHGNt769d0UyxmUIJ731QGF3Tv_hb6QRfgQJqnIqQl0HVYSzOqv8h5sndE3cfCyYxSHti7ki-RfBkiYyBvFMGwzDgOsqL4jx66xbew1xLX8iWzyWhyZaIzrNaUHerrF-KQ0Xfxmz9bHPv_iOCKJpXA4dTq0V796zT3A4K04bx24kGgaBVk550OH8vvAt4TdWY_jPf9YPxauGTvkCY2LA"/>
+</div>
+<div>
+<div class="font-label-md text-white">James Arkan</div>
+<div class="text-[12px] text-outline">CEO, Velox Tech</div>
 </div>
 </div>
 </div>
-<div class="p-10">
-<form class="space-y-4">
-<div class="grid grid-cols-2 gap-4">
-<input class="w-full bg-surface-container border-outline-variant/30 rounded-lg p-3 text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none" placeholder="First Name" type="text"/>
-<input class="w-full bg-surface-container border-outline-variant/30 rounded-lg p-3 text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none" placeholder="Last Name" type="text"/>
+<!-- Depoimento 2 -->
+<div class="glass-card p-8 rounded-2xl italic">
+<div class="flex gap-1 text-primary mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
 </div>
-<input class="w-full bg-surface-container border-outline-variant/30 rounded-lg p-3 text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none" placeholder="Work Email" type="email"/>
-<select class="w-full bg-surface-container border-outline-variant/30 rounded-lg p-3 text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none text-on-surface-variant">
-<option>Monthly Budget</option>
-<option>$5k - $10k</option>
-<option>$10k - $50k</option>
-<option>$50k+</option>
-</select>
-<textarea class="w-full bg-surface-container border-outline-variant/30 rounded-lg p-3 text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none" placeholder="Tell us about your goals..." rows="3"></textarea>
-<button class="w-full bg-primary-container text-on-primary-container font-label-md py-4 rounded-lg hover:brightness-110 transition-all" type="submit">Submit Request</button>
-</form>
+<p class="text-on-surface mb-8 font-body-md">"O nível de transparência e detalhe nos relatórios é inigualável. Finalmente entendemos exatamente para onde cada centavo está indo."</p>
+<div class="flex items-center gap-4 not-italic">
+<div class="w-12 h-12 rounded-full bg-surface-variant overflow-hidden">
+<img alt="Retrato da Cliente" class="w-full h-full object-cover" data-alt="A high-quality portrait of a female marketing executive in a modern workspace. She has a bright, approachable expression. The lighting is sophisticated, utilizing high-contrast chiaroscuro with a subtle neon green glow on the edges of her profile to match the brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIH5KEIRwlMg6ksEijOOJvstbIv3FiBP1j1C5ty1RjC409IU7kRdIwZg12srxuKaai8h-od7aHas2pJ1XdhgTWObcX0fW8CwSZnmNfzGzQ2C0uRXyi67rWIUV8kKXsuRPO86XmN67vAqT63G5EqwP9mpPBs_B5Y_9pH1eCuuE7svxBVR5dRFimHKbD--h2adhqSoQ-GtowJ_jI9ePNxTWKZK_7wJrNIV0P6-1WU9ptc7FzTmglkY3aTtUMiTaViu27bdaq7NIQqtY"/>
+</div>
+<div>
+<div class="font-label-md text-white">Sarah Chen</div>
+<div class="text-[12px] text-outline">Diretora de Marketing, Solis</div>
+</div>
+</div>
+</div>
+<!-- Depoimento 3 -->
+<div class="glass-card p-8 rounded-2xl italic">
+<div class="flex gap-1 text-primary mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface mb-8 font-body-md">"Eles consertaram nossas campanhas de anúncios em uma semana. Nosso CPA caiu 45% e nosso volume atingiu recordes históricos."</p>
+<div class="flex items-center gap-4 not-italic">
+<div class="w-12 h-12 rounded-full bg-surface-variant overflow-hidden">
+<img alt="Retrato do Cliente" class="w-full h-full object-cover" data-alt="A portrait of a male founder in a minimalist, high-end tech environment. He is wearing a dark charcoal turtleneck. The image is styled with a premium dark-mode aesthetic, featuring soft green rim lighting and a cinematic, low-key atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk_XNgE1qQtl0UhXSTGjqTnUAi6tt_MlWGoqU00XRsJGtni0jSxLhDfD2d8PqKvl7cg5zgmfZKFFd0KAEGsiWUaM6_t38I7NpL0uFBmbBX25Ey_s8dOz_IXijp-x4dXXKl4k4RNAAsxiXWic4X6PM7-GLCvpc1mNVZwQw8jqnEQYJaE9CkcatLl9I56KmCpQHO_ezjG2DjZ5z5JrtQ8fuAsq9VVAy7iuHYiR2UfiSJM9N-Wje2rmlDL68vKuMAz4bLFEruGMocM2w"/>
+</div>
+<div>
+<div class="font-label-md text-white">Marcus Thorne</div>
+<div class="text-[12px] text-outline">Fundador, Apex Retail</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Seção CTA -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop relative overflow-hidden">
+<div class="max-w-container-max mx-auto glass-card rounded-[40px] p-12 md:p-24 text-center relative z-10 overflow-hidden">
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-primary/20 blur-[100px] rounded-full"></div>
+<div class="absolute -bottom-24 -left-24 w-64 h-64 bg-primary/10 blur-[100px] rounded-full"></div>
+<h2 class="font-display-lg-mobile md:font-headline-lg text-white mb-8 relative z-20">Pronto para Superar a Concorrência?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto mb-12 relative z-20">Junte-se às marcas de elite que utilizam a máquina de marketing de alta velocidade da Lumen.</p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center items-center relative z-20">
+<button class="w-full sm:w-auto bg-primary-container text-on-primary-fixed px-12 py-5 rounded-xl font-headline-md hover:shadow-[0_0_30px_#2ae500] transition-all active:scale-95">
+                    Comece Seu Crescimento
+                </button>
+<button class="w-full sm:w-auto text-white border-b border-white hover:text-primary hover:border-primary transition-all font-label-md py-2">
+                    Agendar uma Sessão Estratégica
+                </button>
 </div>
 </div>
 </section>
 </main>
-<!-- Footer -->
-<footer class="w-full py-12 bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant/10">
-<div class="flex flex-col md:flex-row justify-between items-center px-margin-desktop max-w-container-max mx-auto gap-gutter">
-<div class="flex flex-col items-center md:items-start gap-4">
-<span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">Lumen Growth</span>
-<p class="font-body-md text-body-md text-on-surface dark:text-on-surface opacity-60">ROI-focused advertising for the digital age.</p>
+<!-- Rodapé -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest w-full py-12 border-t border-outline-variant/10">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto gap-gutter">
+<div class="flex flex-col items-center md:items-start">
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed mb-4">Lumen Marketing</span>
+<p class="font-body-md text-body-md text-on-surface-variant text-center md:text-left max-w-xs">
+                Iluminando o potencial de marcas através da fusão entre ciência de dados e centelha criativa.
+            </p>
 </div>
-<div class="flex gap-8">
-<a class="font-label-md text-label-md text-on-secondary-container dark:text-on-secondary-container hover:text-primary-fixed-dim dark:hover:text-primary-fixed-dim transition-all" href="#">Privacy Policy</a>
-<a class="font-label-md text-label-md text-on-secondary-container dark:text-on-secondary-container hover:text-primary-fixed-dim dark:hover:text-primary-fixed-dim transition-all" href="#">Terms of Service</a>
-<a class="font-label-md text-label-md text-on-secondary-container dark:text-on-secondary-container hover:text-primary-fixed-dim dark:hover:text-primary-fixed-dim transition-all" href="#">Case Studies</a>
-<a class="font-label-md text-label-md text-on-secondary-container dark:text-on-secondary-container hover:text-primary-fixed-dim dark:hover:text-primary-fixed-dim transition-all" href="#">Careers</a>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-label-md text-label-md text-on-secondary-container dark:text-on-secondary-container hover:text-primary-fixed-dim dark:hover:text-primary-fixed-dim transition-all" href="#">Política de Privacidade</a>
+<a class="font-label-md text-label-md text-on-secondary-container dark:text-on-secondary-container hover:text-primary-fixed-dim dark:hover:text-primary-fixed-dim transition-all" href="#">Termos de Serviço</a>
+<a class="font-label-md text-label-md text-on-secondary-container dark:text-on-secondary-container hover:text-primary-fixed-dim dark:hover:text-primary-fixed-dim transition-all" href="#">Cases de Sucesso</a>
+<a class="font-label-md text-label-md text-on-secondary-container dark:text-on-secondary-container hover:text-primary-fixed-dim dark:hover:text-primary-fixed-dim transition-all" href="#">Carreiras</a>
 </div>
-<p class="font-label-md text-label-md text-on-secondary-container dark:text-on-secondary-container opacity-40">© 2024 Lumen Growth. All rights reserved.</p>
+<p class="font-label-md text-label-md text-on-surface-variant text-center md:text-right">
+            © 2024 Lumen Marketing. Todos os direitos reservados.
+        </p>
 </div>
 </footer>
 <script>
-        // Micro-interaction for ROI calculator range
-        const range = document.querySelector('input[type="range"]');
-        const valueDisplay = document.getElementById('roi-value');
-        if (range && valueDisplay) {
-            range.addEventListener('input', (e) => {
-                valueDisplay.textContent = e.target.value + 'x';
-            });
-        }
+    // Simple reveal on scroll interaction
+    const observerOptions = {
+        threshold: 0.1
+    };
 
-        // Simple scroll reveal effect for cards
-        const observerOptions = {
-            threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('opacity-100', 'translate-y-0');
-                    entry.target.classList.remove('opacity-0', 'translate-y-8');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.glass-card').forEach(card => {
-            card.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-8');
-            observer.observe(card);
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('opacity-100');
+                entry.target.classList.remove('opacity-0', 'translate-y-10');
+            }
         });
-    </script>
+    }, observerOptions);
+
+    document.querySelectorAll('.glass-card').forEach(card => {
+        card.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+        observer.observe(card);
+    });
+</script>
 </body></html>

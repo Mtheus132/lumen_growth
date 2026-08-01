@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lumen Growth | Serviços de SEO</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+                  "tertiary": "#fdf9f9",
+                  "surface-dim": "#111415",
+                  "on-primary-fixed": "#022100",
+                  "surface-container-high": "#282a2b",
+                  "inverse-primary": "#106e00",
+                  "on-primary-fixed-variant": "#095300",
+                  "primary-fixed-dim": "#2ae500",
+                  "on-secondary-fixed": "#1c1b1b",
+                  "surface-variant": "#323536",
+                  "on-error-container": "#ffdad6",
+                  "secondary-fixed": "#e5e2e1",
+                  "primary-fixed": "#79ff5b",
+                  "on-error": "#690005",
+                  "surface-container-highest": "#323536",
+                  "primary": "#efffe3",
+                  "inverse-surface": "#e1e3e4",
+                  "surface": "#111415",
+                  "tertiary-fixed": "#e5e2e1",
+                  "error": "#ffb4ab",
+                  "secondary": "#c9c6c5",
+                  "on-primary": "#053900",
+                  "on-secondary": "#313030",
+                  "error-container": "#93000a",
+                  "background": "#111415",
+                  "surface-tint": "#2ae500",
+                  "on-primary-container": "#107100",
+                  "surface-container": "#1d2021",
+                  "on-tertiary": "#313030",
+                  "tertiary-fixed-dim": "#c8c6c5",
+                  "on-surface": "#e1e3e4",
+                  "on-secondary-container": "#bab8b7",
+                  "surface-bright": "#373a3b",
+                  "primary-container": "#39ff14",
+                  "on-tertiary-fixed": "#1c1b1b",
+                  "tertiary-container": "#e0dddc",
+                  "inverse-on-surface": "#2e3132",
+                  "on-secondary-fixed-variant": "#474646",
+                  "on-tertiary-fixed-variant": "#474746",
+                  "outline-variant": "#3c4b35",
+                  "on-background": "#e1e3e4",
+                  "on-surface-variant": "#baccb0",
+                  "surface-container-low": "#191c1d",
+                  "outline": "#85967c",
+                  "surface-container-lowest": "#0c0f10",
+                  "on-tertiary-container": "#626161",
+                  "secondary-container": "#4a4949"
+          },
+          "borderRadius": {
+                  "DEFAULT": "0.25rem",
+                  "lg": "0.5rem",
+                  "xl": "0.75rem",
+                  "full": "9999px"
+          },
+          "spacing": {
+                  "margin-desktop": "64px",
+                  "margin-mobile": "24px",
+                  "container-max": "1280px",
+                  "gutter": "24px",
+                  "unit": "8px"
+          },
+          "fontFamily": {
+                  "headline-lg": ["Montserrat"],
+                  "display-lg-mobile": ["Montserrat"],
+                  "label-md": ["Inter"],
+                  "body-md": ["Inter"],
+                  "headline-md": ["Montserrat"],
+                  "display-lg": ["Montserrat"],
+                  "body-lg": ["Inter"]
+          },
+          "fontSize": {
+                  "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                  "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "800"}],
+                  "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                  "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                  "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                  "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                  "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+        body {
+            background-color: #0B0B0B;
+            color: #e1e3e4;
+            overflow-x: hidden;
+        }
+
+        .glass-card {
+            background: rgba(26, 26, 26, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            border-color: #2ae500;
+            box-shadow: 0 0 20px rgba(42, 229, 0, 0.15);
+        }
+
+        .neon-glow {
+            box-shadow: 0 0 15px rgba(42, 229, 0, 0.4);
+        }
+
+        .glow-line {
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, #2ae500 50%, transparent 100%);
+            opacity: 0.3;
+        }
+
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 50%, rgba(42, 229, 0, 0.12) 0%, transparent 75%);
+        }
+
+        .chart-bar {
+            transition: height 1s ease-out;
+        }
+        
+        .neon-text-highlight {
+            color: #2ae500;
+            text-shadow: 0 0 20px rgba(42, 229, 0, 0.6);
+        }
+
+        .hero-blob {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(42, 229, 0, 0.1) 0%, transparent 70%);
+            filter: blur(80px);
+            z-index: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md bg-background text-on-background">
+
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/20 shadow-[0_0_15px_rgba(42,229,0,0.1)]">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-md border-b border-outline-variant/20 shadow-[0_0_15px_rgba(42,229,0,0.1)]">
+        <div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+        <a class="font-headline-md text-headline-md font-bold tracking-tighter text-primary dark:text-primary-fixed" href="#">Lumen Growth</a>
+        <div class="hidden md:flex items-center gap-8">
+    
+            <a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="/index.html">Inicio</a>
+
+        <a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="/trafego_pago.html">Tráfego Pago </a>
+
+        <a class="font-label-md text-label-md text-primary dark:text-primary-fixed border-b-2 border-primary hover:text-primary transition-colors duration-300" href="/seo.html">SEO</a>
+
+        <a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="/criacao_de_site.html">Criação de Site & LP</a>
+        </div>
+        <button class="bg-primary-container text-on-primary-fixed px-6 py-2 rounded-full font-label-md hover:shadow-[0_0_12px_#2ae500] transition-all active:scale-95">
+                    Fale Conosco
+                </button>
+        </div>
+        </nav>
+</header>
+<main class="pt-20">
+<!-- Redesigned Hero Section -->
+<section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden hero-gradient">
+<!-- Modern decorative elements -->
+<div class="hero-blob -top-48 -left-48 animate-pulse"></div>
+<div class="hero-blob -bottom-48 -right-48 animate-pulse" style="animation-delay: 2s"></div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center z-10">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/5 text-primary-fixed-dim border border-primary/20 mb-8 font-label-md text-label-md tracking-wider uppercase backdrop-blur-sm">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-fixed-dim opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary-fixed-dim"></span>
+</span>
+                Excelência em Mecanismos de Busca
+            </div>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-8 tracking-tighter text-white max-w-4xl mx-auto leading-tight">
+                Domine os <span class="neon-text-highlight">Resultados de Busca.</span>
+</h1>
+<p class="max-w-2xl mx-auto font-body-lg text-body-lg text-on-surface-variant mb-12 leading-relaxed">
+                Combinamos precisão técnica baseada em dados com estratégia de conteúdo criativo para colocar sua marca no topo da visibilidade orgânica.
+            </p>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<button class="bg-primary-container text-on-primary-fixed px-10 py-5 rounded-xl font-label-md text-label-md flex items-center justify-center gap-3 neon-glow hover:scale-[1.02] transition-all group">
+                    Auditar Meu Site 
+                    <span class="material-symbols-outlined group-hover:rotate-12 transition-transform">analytics</span>
+</button>
+<button class="glass-card text-on-surface px-10 py-5 rounded-xl font-label-md text-label-md flex items-center justify-center hover:bg-white/10 transition-all border border-white/10">
+                    Ver Cases de Sucesso
+                </button>
+</div>
+</div>
+<!-- Ambient tech pattern -->
+<div class="absolute inset-0 z-0 opacity-[0.03]" style="background-image: radial-gradient(#2ae500 1px, transparent 1px); background-size: 40px 40px;"></div>
+</section>
+<!-- Mock Dashboard Visual Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-5 space-y-6">
+<h2 class="font-headline-lg text-headline-lg text-white">Dashboard de Performance de Precisão</h2>
+<p class="text-on-surface-variant font-body-lg">Pare de adivinhar. Nosso dashboard proprietário Lumen SEO fornece insights em tempo real sobre seu ranking de palavras-chave, qualidade do tráfego e levantamento de conversão.</p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed-dim">check_circle</span>
+<span>Atualizações de Ranking ao Vivo</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed-dim">check_circle</span>
+<span>Alertas de Movimentação de Concorrentes</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed-dim">check_circle</span>
+<span>Rastreamento de Atribuição de Receita</span>
+</li>
+</ul>
+</div>
+<div class="lg:col-span-7">
+<div class="glass-card rounded-xl p-8 border border-white/5 relative overflow-hidden">
+<div class="flex justify-between items-center mb-10">
+<div>
+<p class="text-label-md font-label-md text-on-surface-variant">Performance de Palavras-Chave</p>
+<h3 class="text-headline-md font-headline-md text-white">Visibilidade Orgânica +240%</h3>
+</div>
+<div class="flex gap-2">
+<span class="w-3 h-3 rounded-full bg-primary-fixed-dim"></span>
+<span class="w-3 h-3 rounded-full bg-surface-variant"></span>
+<span class="w-3 h-3 rounded-full bg-surface-variant"></span>
+</div>
+</div>
+<!-- Mock Chart -->
+<div class="flex items-end justify-between h-48 gap-2 px-4">
+<div class="chart-bar w-full bg-primary-fixed-dim/20 rounded-t-sm" style="height: 40%"></div>
+<div class="chart-bar w-full bg-primary-fixed-dim/40 rounded-t-sm" style="height: 60%"></div>
+<div class="chart-bar w-full bg-primary-fixed-dim/30 rounded-t-sm" style="height: 50%"></div>
+<div class="chart-bar w-full bg-primary-fixed-dim/60 rounded-t-sm" style="height: 85%"></div>
+<div class="chart-bar w-full bg-primary-fixed-dim/50 rounded-t-sm" style="height: 70%"></div>
+<div class="chart-bar w-full bg-primary-fixed-dim/90 rounded-t-sm shadow-[0_0_15px_#2ae500]" style="height: 100%"></div>
+<div class="chart-bar w-full bg-primary-fixed-dim/40 rounded-t-sm" style="height: 65%"></div>
+<div class="chart-bar w-full bg-primary-fixed-dim/70 rounded-t-sm" style="height: 90%"></div>
+</div>
+<!-- Dashboard Labels -->
+<div class="flex justify-between mt-6 text-label-md text-label-md text-on-surface-variant border-t border-white/10 pt-4">
+<span>SEG</span><span>TER</span><span>QUA</span><span>QUI</span><span>SEX</span><span>SÁB</span><span>DOM</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="glow-line"></div>
+<!-- SEO Pillar Services (Bento Grid) -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-white mb-4">Nosso Ecossistema de SEO</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto">Três pilares fundamentais projetados para transformar seu domínio em uma potência de autoridade.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Technical SEO -->
+<div class="glass-card p-8 rounded-xl flex flex-col justify-between group h-full">
+<div>
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary-fixed-dim mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="settings_ethernet">settings_ethernet</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-white mb-4">SEO Técnico</h3>
+<p class="text-on-surface-variant mb-6">Otimizando a base do seu site. De Core Web Vitals a XML sitemaps, garantimos que os mecanismos de busca possam rastrear, indexar e ranquear seu conteúdo sem atrito.</p>
+</div>
+<ul class="text-label-md font-label-md text-primary-fixed-dim space-y-2">
+<li>• Arquitetura do Site</li>
+<li>• Otimização de Velocidade</li>
+<li>• Marcação de Schema</li>
+</ul>
+</div>
+<!-- Content Strategy -->
+<div class="glass-card p-8 rounded-xl flex flex-col justify-between group h-full border-t-primary-container/20">
+<div>
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary-fixed-dim mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="edit_note">edit_note</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-white mb-4">Estratégia de Conteúdo</h3>
+<p class="text-on-surface-variant mb-6">Não apenas escrevemos; arquitetamos autoridade. Nossos clusters de conteúdo de alta intenção são projetados para responder às consultas dos usuários e satisfazer as diretrizes E-E-A-T mais recentes.</p>
+</div>
+<ul class="text-label-md font-label-md text-primary-fixed-dim space-y-2">
+<li>• Pesquisa de Palavras-chave</li>
+<li>• Clusterização Tópica</li>
+<li>• Auditorias de Conteúdo</li>
+</ul>
+</div>
+<!-- Backlink Building -->
+<div class="glass-card p-8 rounded-xl flex flex-col justify-between group h-full">
+<div>
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary-fixed-dim mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="link">link</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-white mb-4">Construção de Backlinks</h3>
+<p class="text-on-surface-variant mb-6">Ganhando confiança através de menções de alta autoridade. Protegemos backlinks white-hat de domínios respeitáveis para elevar a autoridade do seu domínio e visibilidade de busca.</p>
+</div>
+<ul class="text-label-md font-label-md text-primary-fixed-dim space-y-2">
+<li>• RP Digital</li>
+<li>• Campanhas de Outreach</li>
+<li>• Menções de Marca não Linkadas</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="relative rounded-2xl bg-surface-container-high p-12 overflow-hidden text-center border border-white/5">
+<div class="absolute inset-0 bg-primary/5 pointer-events-none"></div>
+<div class="relative z-10 max-w-2xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-white mb-6">Pronto para Ser Dono da Primeira Página?</h2>
+<p class="text-on-surface-variant mb-8">Agende uma consultoria detalhada de SEO com nossos especialistas e descubra o potencial inexplorado da sua paisagem de busca orgânica.</p>
+<button class="bg-primary text-on-primary px-10 py-4 rounded-full font-headline-md text-headline-md font-bold neon-glow">
+                    Começar Hoje
+                </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 bg-surface-container-lowest border-t border-outline-variant/10">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-desktop max-w-container-max mx-auto gap-gutter text-center md:text-left">
+<div class="font-headline-md text-headline-md font-bold text-primary">
+            Lumen Marketing
+        </div>
+<div class="flex flex-wrap justify-center gap-gutter">
+<a class="font-label-md text-label-md text-on-secondary-container hover:text-primary transition-all" href="#">Política de Privacidade</a>
+<a class="font-label-md text-label-md text-on-secondary-container hover:text-primary transition-all" href="#">Termos de Serviço</a>
+<a class="font-label-md text-label-md text-on-secondary-container hover:text-primary transition-all" href="#">Cases de Sucesso</a>
+<a class="font-label-md text-label-md text-on-secondary-container hover:text-primary transition-all" href="#">Carreiras</a>
+</div>
+<div class="text-body-md font-body-md text-on-surface-variant">
+            © 2024 Lumen Marketing. Todos os direitos reservados.
+        </div>
+</div>
+</footer>
+<script>
+    // Micro-interaction for the dashboard chart
+    document.addEventListener('DOMContentLoaded', () => {
+        const bars = document.querySelectorAll('.chart-bar');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    bars.forEach((bar, index) => {
+                        const finalHeight = bar.style.height;
+                        bar.style.height = '0%';
+                        setTimeout(() => {
+                            bar.style.height = finalHeight;
+                        }, index * 100);
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const chartSection = document.querySelector('.lg\\:col-span-7');
+        if (chartSection) observer.observe(chartSection);
+    });
+</script>
+</body></html>
