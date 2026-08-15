@@ -117,113 +117,89 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <!-- Barra de Navegação Superior -->
 <!-- NAVBAR -->
-<nav class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/20 shadow-[0_0_15px_rgba(42,229,0,0.1)]">
+<nav class="fixed top-0 left-0 w-full z-50 bg-[#0d1110] border-b border-white/10">
 
-  <div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+  <div class="h-20 px-5 md:px-margin-desktop max-w-container-max mx-auto flex items-center justify-between">
 
     <!-- Logo -->
     <a
       href="/"
-      class="font-headline-md text-headline-md font-bold tracking-tighter text-primary dark:text-primary-fixed"
+      class="font-headline-md text-2xl md:text-headline-md font-bold tracking-tighter text-primary"
     >
       Lumen Growth
     </a>
 
-
-    <!-- MENU DESKTOP -->
+    <!-- Menu Desktop -->
     <div class="hidden md:flex items-center gap-8">
 
-      <a
-        href="/"
-        data-nav-link
-        data-page="home"
-        class="nav-link font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300"
-      >
+      <a href="/"
+        class="font-label-md text-on-surface-variant hover:text-primary transition-colors">
         Início
       </a>
 
-      <a
-        href="/trafego_pago.html"
-        data-nav-link
-        data-page="trafego"
-        class="nav-link font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300"
-      >
+      <a href="/trafego_pago.html"
+        class="font-label-md text-on-surface-variant hover:text-primary transition-colors">
         Tráfego Pago
       </a>
 
-      <a
-        href="/seo.html"
-        data-nav-link
-        data-page="seo"
-        class="nav-link font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300"
-      >
+      <a href="/seo.html"
+        class="font-label-md text-on-surface-variant hover:text-primary transition-colors">
         SEO
       </a>
 
-      <a
-        href="/criacao_de_site.html"
-        data-nav-link
-        data-page="site"
-        class="nav-link font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300"
-      >
+      <a href="/criacao_de_site.html"
+        class="font-label-md text-on-surface-variant hover:text-primary transition-colors">
         Criação de Site & LP
       </a>
 
     </div>
 
-
-    <!-- CTA DESKTOP -->
+    <!-- CTA Desktop -->
     <a
       href="https://wa.me/5511940689092?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Lumen%20Growth."
       target="_blank"
       rel="noopener noreferrer"
-      class="hidden md:inline-flex items-center justify-center bg-primary-container text-on-primary-fixed px-6 py-2 rounded-full font-label-md hover:shadow-[0_0_12px_#2ae500] transition-all active:scale-95"
+      class="hidden md:inline-flex bg-primary-container text-on-primary-fixed px-6 py-2 rounded-full font-label-md font-bold hover:shadow-[0_0_12px_#2ae500] transition-all"
     >
       Fale Conosco
     </a>
 
-
-    <!-- BOTÃO MOBILE -->
+    <!-- Botão Mobile -->
     <button
       id="mobile-menu-button"
       type="button"
       aria-label="Abrir menu"
       aria-expanded="false"
-      aria-controls="mobile-menu"
-      class="md:hidden flex items-center justify-center w-11 h-11 text-primary-container border border-primary-container/40 rounded-lg hover:bg-primary-container/10 transition-colors"
+      class="md:hidden flex items-center justify-center w-11 h-11 rounded-lg border border-primary/40 text-primary hover:bg-primary/10 transition-colors"
     >
 
       <!-- Hambúrguer -->
       <svg
-        id="menu-open-icon"
-        xmlns="http://www.w3.org/2000/svg"
+        id="menu-icon-open"
+        class="w-6 h-6"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
         stroke-width="2"
-        class="w-6 h-6"
       >
         <path
           stroke-linecap="round"
-          stroke-linejoin="round"
           d="M4 6h16M4 12h16M4 18h16"
         />
       </svg>
 
-      <!-- Fechar -->
+      <!-- X -->
       <svg
-        id="menu-close-icon"
-        xmlns="http://www.w3.org/2000/svg"
+        id="menu-icon-close"
+        class="w-6 h-6 hidden"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
         stroke-width="2"
-        class="w-6 h-6 hidden"
       >
         <path
           stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M6 18L18 6M6 6l12 12"
+          d="M6 6l12 12M18 6L6 18"
         />
       </svg>
 
@@ -232,56 +208,47 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
 
-  <!-- MENU MOBILE -->
+  <!-- Dropdown Mobile -->
   <div
     id="mobile-menu"
-    class="hidden md:hidden bg-surface/95 backdrop-blur-md border-t border-outline-variant/20"
+    class="hidden md:hidden absolute top-full left-0 w-full bg-[#0d1110] border-t border-white/10 shadow-2xl"
   >
 
-    <div class="flex flex-col px-margin-mobile py-6 gap-1">
+    <div class="px-5 py-4 flex flex-col">
 
       <a
         href="/"
-        data-mobile-nav-link
-        data-page="home"
-        class="mobile-nav-link font-label-md text-on-surface-variant hover:text-primary-container transition-colors py-3"
+        class="mobile-menu-link py-3 border-b border-white/5 text-on-surface-variant hover:text-primary transition-colors"
       >
         Início
       </a>
 
       <a
         href="/trafego_pago.html"
-        data-mobile-nav-link
-        data-page="trafego"
-        class="mobile-nav-link font-label-md text-on-surface-variant hover:text-primary-container transition-colors py-3"
+        class="mobile-menu-link py-3 border-b border-white/5 text-on-surface-variant hover:text-primary transition-colors"
       >
         Tráfego Pago
       </a>
 
       <a
         href="/seo.html"
-        data-mobile-nav-link
-        data-page="seo"
-        class="mobile-nav-link font-label-md text-on-surface-variant hover:text-primary-container transition-colors py-3"
+        class="mobile-menu-link py-3 border-b border-white/5 text-on-surface-variant hover:text-primary transition-colors"
       >
         SEO
       </a>
 
       <a
         href="/criacao_de_site.html"
-        data-mobile-nav-link
-        data-page="site"
-        class="mobile-nav-link font-label-md text-on-surface-variant hover:text-primary-container transition-colors py-3"
+        class="mobile-menu-link py-3 text-on-surface-variant hover:text-primary transition-colors"
       >
         Criação de Site & LP
       </a>
-
 
       <a
         href="https://wa.me/5511940689092?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Lumen%20Growth."
         target="_blank"
         rel="noopener noreferrer"
-        class="bg-primary-container text-on-primary-fixed px-6 py-3 rounded-lg font-bold text-center mt-4"
+        class="mt-4 bg-primary-container text-on-primary-fixed py-3 rounded-lg font-bold text-center"
       >
         Fale Conosco
       </a>
