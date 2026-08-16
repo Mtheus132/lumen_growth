@@ -288,13 +288,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- Seção Hero -->
 <section class="relative h-screen flex items-center justify-center overflow-hidden">
   <div class="absolute inset-0 z-0">
-    <img
-  src="img/agencia_de_trafego_lumen_growth_banner_11zon.webp"
-  alt="Agência de Tráfego Pago - Lumen Growth"
-  fetchpriority="high"
-  decoding="async"
-  class="w-full h-full object-cover object-center transition-transform duration-[20000ms] hover:scale-110"
->    
+
+    <picture class="w-full h-full">
+
+      <!-- Mobile -->
+      <source
+        media="(max-width: 767px)"
+        srcset="img/agencia_de_trafego_lumen_growth_banner_11zon_mobile.webp"
+      >
+    
+      <!-- Desktop -->
+      <img
+        src="img/agencia_de_trafego_lumen_growth_banner_11zon.webp"
+        alt="Agência de Tráfego Pago - Lumen Growth"
+        fetchpriority="high"
+        decoding="async"
+        class="w-full h-full object-cover object-center"
+      >
+    
+    </picture>  
+
    <div class="absolute inset-0 hero-overlay"></div>
   </div>
   <div class="relative z-10 text-center px-margin-mobile max-w-4xl">

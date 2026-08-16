@@ -284,13 +284,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="relative min-h-[819px] flex items-center justify-center overflow-hidden px-margin-mobile md:px-margin-desktop">
 <div class="absolute inset-0 z-0">
 <div class="absolute inset-0 bg-gradient-to-b from-transparent via-background to-background"></div>
-<img
-  src="img/hero_banner_trafego_11zon.webp"
-  alt="Agência de Tráfego Pago - Lumen Growth"
-  fetchpriority="high"
-  decoding="async"
-  class="w-full h-full object-cover object-center transition-transform duration-[20000ms] hover:scale-110"
-> 
+
+<picture class="w-full h-full">
+
+  <!-- Mobile -->
+  <source
+    media="(max-width: 767px)"
+    srcset="img/hero_banner_trafego_11zon_mobile.webp"
+  >
+
+  <!-- Desktop -->
+  <img
+    src="img/hero_banner_trafego_11zon.webp"
+    alt="Agência de Tráfego Pago - Lumen Growth"
+    fetchpriority="high"
+    decoding="async"
+    class="w-full h-full object-cover object-center"
+  >
+
+</picture>
+
  </div>
 <div class="relative z-10 text-center max-w-4xl mx-auto">
 <div class="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-primary/10 border border-primary/20 text-primary-fixed-dim font-label-md text-label-md">
