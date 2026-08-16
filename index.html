@@ -2,7 +2,23 @@
 
 <html class="scroll-smooth dark"  lang="pt-BR">
   <head>
-
+    <script>
+      function loadGTM() {
+        if (window.gtmLoaded) return;
+        window.gtmLoaded = true;
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-K2TH7T7G');
+      }
+      // Carrega no primeiro sinal de interação (cobre cliques no WhatsApp/CTA)
+      ['scroll','mousemove','touchstart','keydown'].forEach(evt =>
+        window.addEventListener(evt, loadGTM, {once:true, passive:true})
+      );
+      // Garante o carregamento mesmo sem interação nenhuma
+      window.addEventListener('load', () => setTimeout(loadGTM, 2500));
+    </script>
     <!-- GPT ADS PIXEL 
     <script>!function(w,d,s,u){if(w.oaiq)return;var q=function(){q.q.push(arguments)};q.q=[];w.oaiq=q;var j=d.createElement(s);j.async=1;j.src=u;var f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f)}(window,document,"script","https://bzrcdn.openai.com/sdk/oaiq.min.js");oaiq("init",{pixelId:"K1d1JN1jBj8xqMfJiTapa2",debug:true});</script>
 
