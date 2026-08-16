@@ -75,10 +75,16 @@
 <meta name="twitter:description" content="Transformamos investimento em Google Ads e Meta Ads em leads, oportunidades e crescimento para sua empresa.">
 <meta name="twitter:image" content="https://lumengrowth.com.br/img/og-lumen-growth.jpg">
 
-<link rel="stylesheet" href="./css/tailwind.css">
-
-<!-- CSS principal -->
-<link rel="stylesheet" href="/css/tailwind.css">
+<!-- CSS principal SEM bloquear renderização -->
+<link
+  rel="preload"
+  href="./css/tailwind.css"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'"
+>
+<noscript>
+  <link rel="stylesheet" href="./css/tailwind.css">
+</noscript>
 
 <!-- Antecipar conexão -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
